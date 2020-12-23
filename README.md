@@ -1,18 +1,18 @@
-# アプリケーション名
+## アプリケーション名
 Trint
 
-# アプリケーション概要
+## アプリケーション概要
 テニスを楽しむ人のためのアプリです。<br>
 誰でも気軽にテニスイベント(練習会・サークル・プライベートレッスン・トーナメントなど）を作成したり、参加することができます。<br> <br>
 
-# URL
+## URL
 https://trint.herokuapp.com/
 
-# テスト用アカウント
+## テスト用アカウント
 email:test@com<br>
 password:111aaa
 
-# 制作背景(意図)
+## 制作背景(意図)
 私自身が趣味でテニスをしており、スクールに通ったり時々一般のトーナメントにも参加しています。<br>
 その中で不便に感じたことを解決すべく、このアプリを制作しました。<br><br>
 ### 気軽にテニスができる仲間を増やしたい<br>
@@ -27,7 +27,7 @@ password:111aaa
 →本部にしかトーナメント表を置いていないので試合の進捗を何度も確認しにいかなければならない<br>
 →控えに入った場合はいつ前の試合が終わるかわからないので近くで待機していないといけない<br>
 
-# 目指した課題解決
+## 目指した課題解決
 ### イベントをもっと気軽に
 ・誰でもイベントを開催・参加できる<br>
 ・主催者や参加者のプロフィールが見れて、どんな人が主催・参加しているのかわかるようにする<br>
@@ -52,7 +52,7 @@ password:111aaa
 家族構成 --- 独身・一人暮らし<br>
 趣味 ------- テニス<br>
 
-# 洗い出した要件
+## 洗い出した要件
 ・ユーザー登録ができる<br>
 ・ユーザーはお互いのプロフィールを見ることができる<br>
 ・イベントを作成できる<br>
@@ -70,7 +70,7 @@ password:111aaa
 ・トーナメントの参加者は試合結果を入力しトーナメント表に反映させることができる<br>
 ・試合結果が送信されるとそのコートの控えの選手に通知がいく<br>
 
-# 利用方法
+## 利用方法
 <a href="https://gyazo.com/30b80d260dea7d1888d8f9253fa9089f"><img src="https://i.gyazo.com/30b80d260dea7d1888d8f9253fa9089f.gif" alt="Image from Gyazo" width="1000"/></a><br>
 TOPページの「NEW」ボタンからユーザー登録をします。<br><br>
 <a href="https://gyazo.com/7fc4bcbc4e9248eb31b398fd4662d718"><img src="https://i.gyazo.com/7fc4bcbc4e9248eb31b398fd4662d718.gif" alt="Image from Gyazo" width="1000"/></a><br>
@@ -90,15 +90,15 @@ TOPページの「NEW」ボタンからユーザー登録をします。<br><br>
 <a href="https://gyazo.com/9928a9f45c79e5fc536bab9a8f3fde23"><img src="https://i.gyazo.com/9928a9f45c79e5fc536bab9a8f3fde23.gif" alt="Image from Gyazo" width="1000"/></a>
 イベント作成の際に会場のURLを記入した場合はイベント詳細ページのmapマークで飛ぶことができます。<br><br>
 
-# 課題や今後実装したい機能
+## 課題や今後実装したい機能
 まだ実装できていない残りの要件を達成したいと思っています。
 
-# データベース設計
+## データベース設計
 <a href="https://gyazo.com/461e8b9279c6b60daf1a4d6074cd8f3a"><img src="https://i.gyazo.com/461e8b9279c6b60daf1a4d6074cd8f3a.png" alt="Image from Gyazo" width="1181"/></a><br><br>
 
-# 使用技術(開発環境)
-HTML/CSS<br>
-Rails<br><br>
+## 使用技術(開発環境)
+HTML5/CSS3<br>
+Rails 6.0.3.4<br><br>
 
 ## users
 | Column             | Type    | Options     |
