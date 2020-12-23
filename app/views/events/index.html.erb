@@ -1,0 +1,68 @@
+<div class='event-index'>
+
+  <div class='event-main'>
+    <%= image_tag "index_01.jpg", class:'event-main-image' %>
+  </div>
+    <%= image_tag "index_icon.svg", class:'event-title-icon' %>
+
+
+  <ul class='event-lists-item'>
+    <li class='status-item'>状況</li>
+    <li class='date-time-item'>日程</li>
+    <li class='event-contents-item'>内容</li>
+    <li class='organizer-item'>主催者</li>
+  </ul>
+
+  <div class='event-lists'>
+    <% @events.each do |event| %>
+      <ul class='event-list'>
+        <div class='status-box'>
+          <li class='status'>募集中</li>
+        </div>
+
+        <li class='date-time'>
+          <span class='date'>
+          <%= event.day.year %>年<br>
+          <%= event.day.month %>月
+          <%= event.day.day %>日
+          <% day = event.day.wday %>
+          <% days = ["(日)", "(月)", "(火)", "(水)", "(木)", "(金)", "(土)"] %>
+            <% if days[day] == "(日)"%>
+              <span class='mon'><%= days[day] %></span>
+            <% elsif days[day] == "(土)"%>
+              <span class='sat'><%= days[day] %></span>
+            <% else %>
+              <%= days[day] %>
+            <% end %>
+        </span>
+        </li>
+      
+        <li class='event-contents'>
+          <% if event.levelev[:name] == "初級"%>
+            <div class='level-2'><%= event.levelev[:name] %></div><% end %>
+          <% if event.levelev[:name] == "初中級"%>
+            <div class='level-3'><%= event.levelev[:name] %></div><% end %>
+          <% if event.levelev[:name] == "中級"%>
+            <div class='level-4'><%= event.levelev[:name] %></div><% end %>
+          <% if event.levelev[:name] == "中上級"%>
+            <div class='level-5'><%= event.levelev[:name] %></div><% end %>
+          <% if event.levelev[:name] == "上級"%>
+            <div class='level-6'><%= event.levelev[:name] %></div><% end %>
+          <% if event.levelev[:name] == "どなたでも"%>
+            <div class='level-7'><%= event.levelev[:name] %></div><% end %>
+          <%= link_to event_path(event.id),class:"contents-title" do %>
+            <%= event.title %>
+          <% end %>
+        </li>
+
+        <li class='organizer'>
+        <div class='user-img'>
+          <%= link_to image_tag(event.user.image, class: "user-img"), "/users/#{event.user.id}" %></div>
+          <%= link_to event.user.nickname, "/users/#{event.user.id}", class:'user-name'%>
+        </li>
+
+      </ul>
+    <% end %>
+  </div>
+
+</div>

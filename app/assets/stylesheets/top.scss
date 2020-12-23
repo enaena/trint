@@ -1,0 +1,407 @@
+/* リセットCSS */
+
+body { 
+  font-family: "Noto Sans JP"; 
+  margin: 0;
+}
+
+
+/* ヘッダー */
+
+header{
+  width: 100vw;
+  height: 80px;
+  background-color: #0073d7;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 10;
+}
+
+.logo-01{
+  width: 150px;
+  margin: 20px 20px;
+}
+
+.header-right{
+  display: flex;
+  align-items: center;
+}
+
+.header-list{
+  list-style: none;
+  display: flex;
+}
+
+.header-text{
+  text-decoration: none;
+  color: white;
+  margin-right: 30px;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+.header-text:hover{
+  color: #d9e021;
+}
+
+.button{
+  display: flex;
+  align-items: center;
+}
+
+.login{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6vh;
+  width: 130px;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  border-radius: 10px;
+  border: 2px solid white;
+  margin-right: 20px;
+}
+.login:hover{
+  background-color: white;
+  color: #0073d7;
+}
+
+.new{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6vh;
+  width: 130px;
+  text-decoration: none;
+  color: #0073d7;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  border-radius: 10px;
+  background-color: #d9e021;
+  border: 2px solid #d9e021;
+  margin-right: 20px;
+}
+.new:hover{
+  background-color: #0073d7;
+  color: #d9e021;
+}
+
+.logout{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6vh;
+  width: 130px;
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  border-radius: 10px;
+  border: 2px solid white;
+  margin-right: 20px;
+}
+.logout:hover{
+  background-color: #333333;
+  border: 2px solid #333333;
+}
+
+
+.my{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6vh;
+  width: 130px;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  border-radius: 10px;
+  color: #0073d7;
+  background-color: #d9e021;
+  border: 2px solid #d9e021;
+  margin-right: 20px;
+}
+.my:hover{
+  background-color: #0073d7;
+  color: #d9e021;
+}
+
+/* コンテンツ */
+
+/* コンテンツ01 */
+
+.contents-01{
+  width: 100vw;
+  height: 90vh;
+  background-color: #0073d7;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: flex-end;
+  padding-top: 70px;
+}
+
+.top-01{
+  width: 70vw;
+}
+
+.top-01-01{
+  width: 15px;
+  margin: 0 0 50px 30px;
+}
+
+.top-01-02{
+  width: 70vw;
+  margin: 0 0 50px 50px;
+}
+
+
+// .top-image{
+//   width: 100vw;
+//   margin: 0 auto;
+//   margin-bottom: 10px;
+//   animation-name: fadeIn1;
+//   animation-duration: 2s;
+//   animation-timing-function: ease;
+// }
+// @keyframes fadeIn1 {
+//   0% {opacity: 0} 
+//   30% {opacity: 0} 
+//   100% {opacity: 1}
+// }
+
+// .top-text{
+//   position: absolute;
+//   left: 0;
+//   right: 0;
+//   top: 0;
+//   bottom: 10px;
+//   margin: auto;
+//   width: 80vw;
+//   margin-bottom: 5vh;
+//   animation-name: fadeIn2;
+//   animation-duration: 5s;
+//   animation-timing-function: ease;
+// }
+// @keyframes fadeIn2 {
+//   0% {opacity: 0} 
+//   30% {opacity: 0} 
+//   100% {opacity: 1}
+// }
+
+
+/* コンテンツ02 */
+
+.contents-02{
+  margin: 100px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-02-01{
+  width: 20vw;
+  margin-bottom: 20px;
+}
+
+.info{
+  width: 60vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #B3B3B3;
+  margin-bottom: 30px;
+}
+
+.info-01{
+  margin-bottom: 5px;
+}
+
+.day{
+  font-size: 1vw;
+  color: #0073d7;
+  margin-right: 10px;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.text{
+  font-size: 1.3vw;
+}
+
+.more{
+  width: 8vw;
+  height: 5vh;
+  font-size: 1vw;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333333;
+  text-decoration: none;
+}
+.more:hover{
+  opacity: 0.8;
+}
+
+
+/* コンテンツ03 */
+
+.contents-03{
+  background-color: black;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+
+.top-03{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.top-03-top{
+  display: flex;
+  flex-direction: column;
+}
+
+.top-03-line{
+  margin-top: 70px;
+  width: 20vw;
+}
+
+.top-03-01{
+  margin: 40px 0 0 70px;
+  width: 25vw;
+}
+
+.top-03-03{
+  width: 55vw;
+}
+
+.top-03-02{
+  margin: 0 auto;
+  width: 65vw;
+}
+
+// .image{
+//   display: flex;
+//   min-width: 100%;
+//   width: min-content;
+//   animation: 20s linear infinite sliderAnimation;
+// }
+// @keyframes sliderAnimation {
+//   100% {transform: translateX(-50%);}
+// }
+
+/* コンテンツ04 */
+
+.contents-04{
+  background-color: black;
+  width: 100vw;
+}
+
+.top-04-main{
+  position: relative;
+}
+
+.top-04-main-box{
+  position: absolute;
+  border: 2px solid white;
+  padding-top: 30px;
+  padding-bottom: 50px;
+  width: 400px;
+  top: 100px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+}
+
+
+.top-04-main-text{
+  color: white;
+  letter-spacing: 2px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .3);
+}
+
+.top-04-main-btn{
+  padding: 10px 25px;
+  background-color: #0073d7;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .3);
+}
+
+.top-04-01{
+  width: 100vw;
+  opacity: 0.5;
+}
+
+.top-04-box{
+  width: 100%;
+  height: 50px;
+}
+
+.top-04-sub{
+  display: flex;
+}
+
+.top-04-02{
+  width: 25vw;
+}
+
+
+
+/* フッター */
+
+footer{
+  width: 100vw;
+  height: 60px;
+  background-color: #0073d7;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left{
+  display: flex;
+  align-items: center;
+}
+
+p{
+  font-size: 10px;
+  color: white;
+}
+
+.footer-right{
+  display: flex;
+  list-style: none;
+  margin-right: 30px;
+}
+
+.footer-text{
+  text-decoration: none;
+  color:white;
+  margin-left: 10px;
+  font-size: 0.8vw;
+  margin-left: 10px;
+}
+.footer-text:hover{
+  color: #d9e021;
+} 

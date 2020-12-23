@@ -1,0 +1,105 @@
+<div class='event'>
+
+<div class='title'>
+  <h1 class='title-text'>
+    イ ベ ン ト 内 容
+  </h1>
+</div>
+
+<%= form_with(model: @event, local: true) do |f| %>
+<%= render 'shared/error_messages', model: f.object %>
+
+  <div class="field">
+    <%= f.label "イベント名", class:"item" %>
+    <div class="mandatory">必須</div>
+    <div class="input">
+    <%= f.text_field :title, class:"input-n" %>
+    </div>
+  </div>
+  
+  <div class="field">
+    <%= f.label "開催日", class:"item" %>
+    <div class="mandatory">必須</div>
+    <div class="input">
+   <%= f.date_field :day,class:"input-day" %>
+    </div>
+  </div>
+
+  <div class="field">
+    <%= f.label "開催時間", class:"item" %>
+    <div class="mandatory">必須</div>
+    <div class="input">
+    <%= f.time_select :start_time,{prompt:'--'}, {class:"input-time"} %>
+       <span>〜</span>
+    <%= f.time_select :end_time,{prompt:'--'}, {class:"input-time"} %>
+    </div>
+  </div>
+
+  <div class="field">
+    <%= f.label "会場", class:"item" %>
+    <div class="mandatory">必須</div>
+    <div class="input">
+    <%= f.text_field :place, class:"input-n" %>
+    </div>
+  </div>
+
+  <div class="field">
+    <%= f.label "会場のURL", class:"item" %>
+    <div class="any">任意</div>
+    <div class="input">
+    <%= f.text_field :place_url, class:"input-n" %>
+    </div>
+  </div>
+
+  <div class="field">
+    <%= f.label "参加レベル", class:"item" %>
+    <div class="mandatory">必須</div>
+    <div class="input">
+    <%= f.collection_select(:levelev_id, Levelev.all, :id, :name, {}, class:"input-hash")%>
+    </div>
+  </div>
+
+  <div class="field">
+    <%= f.label "その他制限", class:"item" %>
+    <div class="any">任意</div>
+    <div class="input">
+    <%= f.text_field :limit, class:"input-n", placeholder:"例）男性限定  20代限定" %>
+    </div>
+  </div>
+
+  <div class="field">
+    <%= f.label "参加人数", class:"item" %>
+    <div class="mandatory">必須</div>
+    <div class="input">
+    <%= f.text_field :number, class:"input-short" %>
+    <span>人</span>
+    </div>
+  </div>
+
+  <div class="field">
+    <%= f.label "参加費(一人あたり)", class:"item" %>
+    <div class="mandatory">必須</div>
+    <div class="input">
+    <%= f.text_field :cost, class:"input-short" %>
+    <span>円</span>
+    </div>
+  </div>
+
+  <div class="field-long">
+    <%= f.label "イベント内容", class:"item" %>
+    <div class="mandatory">必須</div>
+    <div class="input">
+    <%= f.text_area :text, class:"input-long" %>
+    </div>
+  </div>
+
+  <%# <input name="event[user_id]" type="hidden" value=<%= current_user.id%>
+
+  <div class="submit">
+    <%= f.submit "作 成  ＞" ,class:"button-submit"%> 
+  </div>
+
+
+<% end %>
+
+</div>

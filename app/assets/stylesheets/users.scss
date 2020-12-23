@@ -1,0 +1,258 @@
+
+.reg{
+  padding: 80px 0;
+}
+
+.session{
+  padding: 80px 0;
+  height: 75vh;
+}
+
+/* タイトル */
+
+.title{
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.title-text{
+  color: #0073d7;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+
+/* エラーメッセージ */
+
+.error-alert{
+  white-space: pre-line;
+  display: flex;
+  justify-content: center;
+  line-height: 70%;
+}
+
+.error-message{
+  font-size: 12px;
+  color: red;
+  list-style-type: square;
+}
+
+
+/* フォーム */
+
+.field{
+  width: 600px;
+  height: 100px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid #B3B3B3;
+  font-size: 12px;
+}
+
+.field-long{
+  width: 600px;
+  height: 470px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-bottom: 1px solid #B3B3B3;
+}
+
+.material-icons.n{
+  font-size: 20px;
+}
+
+.item{
+  font-size: 12px;
+  position: absolute;
+  left: 10px;
+}
+
+.mandatory{
+  width: 50px;
+  color: red;
+  font-size: 10px;
+  position: absolute;
+  left: 150px;
+}
+
+.any{
+  width: 50px;
+  color: skyblue;
+  font-size: 10px;
+  position: absolute;
+  left: 150px;
+}
+
+.input{
+  width: 400px;
+  position: absolute;
+  right: 0;
+}
+
+.input-n{
+  width: 390px;
+  height: 30px;
+  right: 0;
+  background-color: #f2f2f2;
+  border: none;
+  padding-left: 10px;
+}
+
+.input-hash{
+  width: 150px;
+  height: 30px;
+  right: 0;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.input-short{
+  width: 120px;
+  height: 30px;
+  right: 0;
+  background-color: #f2f2f2;
+  border: none;
+  padding-left: 10px;
+}
+
+.input-long{
+  width: 400px;
+  height: 390px;
+  right: 0;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.input-image{
+  width: 130px;
+  height: 30px;
+  right: 0;
+  font-size: 12px;
+  border: 1px solid #999999;
+  color: #999999;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-form{
+  display: none;
+}
+
+.input-image:hover{
+  background-color: #999999;
+  color: white;
+}
+
+span{
+  color: #333333;
+  text-align: center;
+}
+
+.submit{
+  text-align: center;
+  margin: 50px 0;
+}
+
+.button-submit{
+  color: white;
+  font-size: 13px;
+  background-color: #0073d7;
+  text-align: center;
+  height: 40px;
+  width: 150px;
+  border: none;
+  font-weight: bold;
+}
+.button-submit:hover{
+  opacity: 0.8;
+}
+
+
+/* マイページ */
+
+.user-show{
+  padding: 80px 0;
+  width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-show-items{
+  display: flex;
+  margin-bottom: 100px;
+}
+
+.show-user-face{
+  width: 200px;
+  margin-top: 100px;
+}
+
+.show-user-img.s{
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.show-user-name.s{
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.show-user-item{
+  margin-top: 100px;
+  width: 650px;
+  padding-left: 50px;
+}
+
+.user-items{
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.user-item{
+  margin-right: 20px;
+  font-size: 13px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.user-text{
+  height: 200px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.user-profile{
+  font-size: 12px;
+  white-space: pre-wrap
+}
+
+.Organizer-back{
+  margin-bottom: 100px;
+}
+
+.participation-back{
+}
+
+.Organizer-text,
+.participation-text{
+  font-size: 20px;
+  font-weight: bold;
+  color: #0073d7;
+  margin-bottom: 20px;
+  text-align: center;
+  letter-spacing: 5px;
+}

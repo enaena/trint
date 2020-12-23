@@ -1,0 +1,408 @@
+
+.event{
+  padding: 80px 0;
+}
+
+/* タイトル */
+
+
+/* エラーメッセージ */
+
+
+/* フォーム */
+
+.input-day{
+  width: 70x;
+  height: 30px;
+  margin-right: 10px;
+  right: 0;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.input-time{
+  width: 50px;
+  height: 30px;
+  right: 0;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.success{
+  padding: 80px 0;
+}
+
+.return{
+  color: white;
+  font-size: 13px;
+  background-color: #0073d7;
+  text-align: center;
+  height: 40px;
+  width: 150px;
+  border: none;
+  font-weight: bold;
+}
+
+
+
+/* イベント一覧 */
+
+.event-index{
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.event-main-image{
+  width: 100vw;
+  height: 300px;
+  object-fit: cover;
+  object-position:50% 100%;
+}
+
+.event-title-icon{
+  width: 35vw;
+  margin: 100px 0 60px 0;
+}
+
+.event-lists-item{
+  padding: 10px 0;
+  margin: 0;
+  border-top: 1px solid #B3B3B3;
+  border-bottom: 1px solid #B3B3B3;
+  list-style: none;
+  display: flex;
+  font-size: 12px;
+  text-align: center;
+}
+.status-item{
+  width: 100px;
+}
+.date-time-item{
+  width: 150px;
+}
+.event-contents-item{
+  width: 450px;
+}
+.organizer-item{
+  width: 100px;
+}
+
+.event-list{
+  height: 90px;
+  width: 800px;
+  border-bottom: 1px solid #B3B3B3;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+.event-lists{
+  display: flex;
+  flex-direction: column;
+}
+
+.status-box{
+  width: 100px;
+  height: 90px;
+  background-color: #0073d7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.status{
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.date-time{
+  width: 150px;
+  display: flex;
+  justify-content: center;
+}
+.date{
+  text-align: left;
+  font-size: 15px;
+  font-weight: bold;
+  color: #333333;
+}
+
+.event-contents{
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+}
+
+.level-2,
+.level-3,
+.level-4,
+.level-5,
+.level-6,
+.level-7{
+  font-size: 10px;
+  height: 18px;
+  font-weight: bold;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3px;
+  border-radius: 10px;
+}
+
+.level-2{
+  width: 40px;
+  background-color: #ff7bac;
+}
+.level-3{
+  width: 50px;
+  background-color: #f7931e;
+}
+.level-4{
+  width: 40px;
+  background-color: #f15a24;
+}
+.level-5{
+  width: 50px;
+  background-color: #8cc63f;
+}
+.level-6{
+  width: 40px;
+  background-color: #0071bc;
+}
+.level-7{
+  width: 65px;
+  background-color: #B3B3B3;
+}
+
+.contents-title{
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: #333333;
+}
+.contents-title:hover{
+  color: #0073d7;
+}
+
+.organizer{
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-name{
+  font-size: 8px;
+  color: #333333;
+  text-decoration: none;
+}
+
+.user-img{
+  border-radius: 50%;
+  background-color: #B3B3B3;
+  width: 50px;
+  height: 50px;
+}
+
+.mon{
+  color: red;
+}
+
+.sat{
+  color: royalblue;
+}
+
+
+
+/* イベント詳細 */
+
+.event-show{
+  width: 800px;
+  padding: 80px 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.event-show-top{
+  position: relative;
+  margin-bottom: 550px;
+}
+
+.show-side{
+  margin-top: 100px;
+  width: 180px;
+  position: absolute;
+}
+
+.show-item{
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+}
+
+.show-user{
+  padding: 10px 0 0 0;
+  margin-top: -70px;
+  text-align: center;
+}
+
+.show-user-img{
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin: 10px;
+}
+
+.show-user-name{
+  font-size: 15px;
+  font-weight: bold;
+  color: #333333;
+  text-decoration: none;
+}
+
+.material-icons.s{
+  font-size: 20px;
+  margin-right: 10px;
+}
+.material-icons.sp{
+  font-size: 20px;
+  list-style: none;
+  color: #f15a24;
+  margin-right: 10px;
+}
+
+.show-item,
+.show-date,
+.show-time,
+.show-level,
+.show-limit,
+.show-place,
+.show-number,
+.show-cost{
+  list-style: none;
+  color: #333333;
+  font-size: 12px;
+  margin: 8px 0;
+  font-weight: bold;
+  display: flex;
+}
+
+.show-date-day{
+  color: #333333;
+}
+
+.show-level{
+  display: flex;
+  align-items: flex-start;
+}
+
+.lv{
+  margin-right: 5px;
+  color: #333333;
+}
+
+.show-main{
+  position: absolute;
+  margin-top: 100px;
+  right: 0px;
+  width: 550px;
+  height: 40px;
+}
+
+.show-title{
+  font-size:25px;
+  font-weight: bolder;
+  color: #333333;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.show-text{
+  font-size: 13px;
+  white-space: pre-wrap;
+  color: #333333;
+  line-height: 25px;
+}
+
+.input-participation{
+  width: 800px;
+  height: 30px;
+  margin-right: 10px;
+  right: 0;
+  background-color: #f2f2f2;
+  border: none;
+  padding-left: 10px;
+}
+
+.show-submit{
+  text-align: center;
+  margin: 30px 0 0 0;
+}
+
+.show-button-submit{
+  color: white;
+  font-size: 13px;
+  background-color: #0073d7;
+  text-align: center;
+  height: 40px;
+  width: 400px;
+  border: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+.show-button-submit:hover{
+  opacity: 0.8;
+}
+
+.participant-back{
+  width: 100vw;
+  padding: 70px 0;
+  background-color: #f2f2f2;
+}
+
+.participant{
+  width: 800px;
+  margin: 0 auto;
+}
+
+.participant-text{
+  font-size: 20px;
+  font-weight: bold;
+  color: #0073d7;
+  margin-bottom: 30px;
+}
+
+.participant-users{
+  display: flex;
+}
+
+.participant-user{
+  margin-right: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.participant-user-img{
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 5px;
+}
+
+.participant-user-name{
+  font-size: 10px;
+  text-align: center;
+}
+
+.participant-user-name-text{
+  text-decoration: none;
+  color: #333333;
+}

@@ -1,0 +1,174 @@
+<div class='user-show'>
+
+  <div class='user-show-items'>
+
+    <div class='show-user-face'>
+      <%= image_tag @user.image, class: "show-user-img s"  %>
+      <div class='show-user-name s'><%= @user.nickname %></div>
+    </div>
+
+    <div class='show-user-item'>
+      <ul class='user-items'>
+        <li class='user-item'><%= @user.age[:name] %></li>
+        <li class='user-item'><%= @user.sex[:name] %></li>
+        <li class='user-item'>
+              <% if @user.level[:name] == "初級"%>
+                <div class='level-2'><%= @user.level[:name] %></div>
+              <% elsif @user.level[:name] == "初中級"%>
+                <div class='level-3'><%= @user.level[:name] %></div>
+              <% elsif @user.level[:name] == "中級"%>
+                <div class='level-4'><%= @user.level[:name] %></div>
+              <% elsif @user.level[:name] == "中上級"%>
+                <div class='level-5'><%= @user.level[:name] %></div>
+              <% elsif @user.level[:name] == "上級"%>
+                <div class='level-6'><%= @user.level[:name] %></div>
+              <% elsif @user.level[:name] == "どなたでも"%>
+                <div class='level-7'><%= @user.level[:name] %></div><% end %>
+        </li>
+        <li class='user-item'>テニス歴<%= @user.history %>年</li>
+      </ul>
+      <div class='user-text'>
+        <div class='user-profile'><%= @user.profile %></div>
+      </div>
+    </div>
+    
+  </div>
+
+
+  <div class="Organizer-back">
+
+  <div class='Organizer-text'>主催イベント</div>
+
+    <ul class='event-lists-item'>
+      <li class='status-item'>状況</li>
+      <li class='date-time-item'>日程</li>
+      <li class='event-contents-item'>内容</li>
+      <li class='organizer-item'>主催者</li>
+    </ul>
+
+    <div class='event-lists'>
+      <% @events.each do |event| %>
+        <ul class='event-list'>
+          <div class='status-box'>
+          <li class='status'>募集中</li>
+          </div>
+
+          <li class='date-time'>
+            <span class='date'>
+            <%= event.day.year %>年<br>
+            <%= event.day.month %>月
+            <%= event.day.day %>日
+            <% day = event.day.wday %>
+            <% days = ["(日)", "(月)", "(火)", "(水)", "(木)", "(金)", "(土)"] %>
+            <% if days[day] == "(日)"%>
+              <span class='mon'><%= days[day] %></span>
+            <% elsif days[day] == "(土)"%>
+              <span class='sat'><%= days[day] %></span>
+            <% else %>
+              <%= days[day] %>
+            <% end %>
+          </span>
+          </li>
+        
+          <li class='event-contents'>
+            <% if event.levelev[:name] == "初級"%>
+              <div class='level-2'><%= event.levelev[:name] %></div>
+            <% elsif event.levelev[:name] == "初中級"%>
+              <div class='level-3'><%= event.levelev[:name] %></div>
+            <% elsif event.levelev[:name] == "中級"%>
+              <div class='level-4'><%= event.levelev[:name] %></div>
+            <% elsif event.levelev[:name] == "中上級"%>
+              <div class='level-5'><%= event.levelev[:name] %></div>
+            <% elsif event.levelev[:name] == "上級"%>
+              <div class='level-6'><%= event.levelev[:name] %></div>
+            <% elsif event.levelev[:name] == "どなたでも"%>
+              <div class='level-7'><%= event.levelev[:name] %></div>
+            <% end %>
+            <%= link_to event_path(event.id),class:"contents-title" do %>
+              <%= event.title %>
+            <% end %>
+          </li>
+
+          <li class='organizer'>
+          <div class='user-img'>
+            <%= image_tag event.user.image, class: "user-img" %></div>
+          <div class='user-name'><%= event.user.nickname %></div>
+          </li>
+
+        </ul>
+      <% end %>
+    </div>
+  </div>
+
+
+  <div class="participation-back">
+
+  <div class='participation-text'>参加中イベント</div>
+
+    <ul class='event-lists-item'>
+      <li class='status-item'>状況</li>
+      <li class='date-time-item'>日程</li>
+      <li class='event-contents-item'>内容</li>
+      <li class='organizer-item'>主催者</li>
+    </ul>
+
+    <div class='event-lists'>
+      <% @events.each do |event| %>
+      <%# <% @events.include?(@event_users) do%> 
+        <ul class='event-list'>
+          <div class='status-box'>
+          <li class='status'>募集中</li>
+          </div>
+
+          <li class='date-time'>
+            <span class='date'>
+            <%= event.day.year %>年<br>
+            <%= event.day.month %>月
+            <%= event.day.day %>日
+            <% day = event.day.wday %>
+            <% days = ["(日)", "(月)", "(火)", "(水)", "(木)", "(金)", "(土)"] %>
+            <% if days[day] == "(日)"%>
+              <span class='mon'><%= days[day] %></span>
+            <% elsif days[day] == "(土)"%>
+              <span class='sat'><%= days[day] %></span>
+            <% else %>
+              <%= days[day] %>
+            <% end %>
+          </span>
+          </li>
+        
+          <li class='event-contents'>
+            <% if event.levelev[:name] == "初級"%>
+              <div class='level-2'><%= event.levelev[:name] %></div>
+            <% elsif event.levelev[:name] == "初中級"%>
+              <div class='level-3'><%= event.levelev[:name] %></div>
+            <% elsif event.levelev[:name] == "中級"%>
+              <div class='level-4'><%= event.levelev[:name] %></div>
+            <% elsif event.levelev[:name] == "中上級"%>
+              <div class='level-5'><%= event.levelev[:name] %></div>
+            <% elsif event.levelev[:name] == "上級"%>
+              <div class='level-6'><%= event.levelev[:name] %></div>
+            <% elsif event.levelev[:name] == "どなたでも"%>
+              <div class='level-7'><%= event.levelev[:name] %></div>
+            <% end %>
+            <%= link_to event_path(event.id),class:"contents-title" do %>
+              <%= event.title %>
+            <% end %>
+          </li>
+
+          <li class='organizer'>
+          <div class='user-img'>
+            <%= image_tag event.user.image, class: "user-img" %></div>
+          <div class='user-name'><%= event.user.nickname %></div>
+          </li>
+
+        </ul>
+
+      <% end %>
+    </div>
+    
+  </div>
+
+</div>
+
+
